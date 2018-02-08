@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tetra_start.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="image" fitHeight="400.0" fitWidth="712.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@start.jpg" />
+         </image>
+      </ImageView>
+      
+      <ImageView fx:id="gameover" fitHeight="400.0" fitWidth="712.0" layoutX="15.00" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gameover.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ROWN" alignment="CENTER" layoutX="31.0" layoutY="169.0" prefHeight="31.0" prefWidth="95.0" />
+      <TextField fx:id="COLUMNN" alignment="CENTER" layoutX="556.0" layoutY="169.0" prefHeight="31.0" prefWidth="95.0" />
+      <Text fx:id="rT" fill="WHITE" layoutX="29.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROW NUMBER" textAlignment="CENTER" />
+      <Text fx:id="cT" fill="WHITE" layoutX="540.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLUMN NUMBER" textAlignment="CENTER" />
+      <Button fx:id="button" layoutX="226.0" layoutY="324.0" prefHeight="52.0" prefWidth="254.0" opacity="0.00">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="0.5032679738562091" />
+                  <Stop color="#3636a8" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <TilePane fx:id="tilePane" layoutX="15.0" layoutY="15.0" prefHeight="10.0" prefWidth="10.0" />
+   </children>
+</AnchorPane>
